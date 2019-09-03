@@ -1,0 +1,407 @@
+@charset "UTF-8";
+/*
+** Import variables, extends and mixins
+** -------------------------------------------- */
+/*
+**  Variables
+**
+**  @description    General scss variables usable across all three sites
+**  @since 			1.0.0
+**  ————————————————————————————————————————————————————————————————————————— */
+/*
+**  Paths
+**
+**  @description    Image and font paths
+**  @since          1.0.0
+*/
+/*
+**  Breakpoints
+**
+**  @description    List of topic ids used across all sites
+**  @since          1.0.0
+*/
+/*
+**  Colors
+**
+**  @description    Color variables used across all sites
+**  @since          1.0.0
+*/
+.grey-1 {
+  background: #f7f7f7;
+}
+
+.grey-1-span::before {
+  content: "#f7f7f7";
+}
+
+.grey-2 {
+  background: #eee;
+}
+
+.grey-2-span::before {
+  content: "#eeeeee";
+}
+
+.grey-3 {
+  background: #dadada;
+}
+
+.grey-3-span::before {
+  content: "#dadada";
+}
+
+.grey-4 {
+  background: #bbb;
+}
+
+.grey-4-span::before {
+  content: "#bbbbbb";
+}
+
+.grey-5 {
+  background: #a8a9a9;
+}
+
+.grey-5-span::before {
+  content: "#a8a9a9";
+}
+
+.grey-6 {
+  background: #3e3e3e;
+}
+
+.grey-6-span::before {
+  content: "#3e3e3e";
+}
+
+.grey-7 {
+  background: #292929;
+}
+
+.grey-7-span::before {
+  content: "#292929";
+}
+
+/*
+**  Borders
+**
+**  @description    Specific border settings
+**  @since          1.0.0
+*/
+/*
+**  Typography
+**
+**  @description    Font families, font sizes and line heights
+**  @since          1.0.0
+*/
+/*
+**  Columns
+**
+**  @description    Column widths
+**  @todo           Check if still being used after responsive relaunch
+**  @since          1.0.0
+*/
+/*
+**  Margins
+**
+**  @description    Margin variables
+**  @since          1.0.0
+*/
+/*
+**  Shadows
+**
+**  @description    Box shadow variables for consistent use across all sites
+**  @since          1.0.0
+*/
+/*
+**  Grid settings
+**
+**  @description    Grid gutter width
+**  @since          1.0.0
+*/
+/*
+**  Breakpoints
+**
+**  @description    Breakpoint variables and media queries for responsiveness
+**  @todo           Move mixins to definitions/mixins for better structure
+**  @since 			1.0.0
+**  ————————————————————————————————————————————————————————————————————————— */
+/*
+**  Breakpoint functions
+**
+**  @description    Functions to get min, max and next breakpoint from the
+**                  $grid-breakpoints map, based on the passed params
+**  @since          1.5.4
+*/
+/*
+**  Breakpoint media queries
+**
+**  @description    Media query mixins based on the passed breakpoint params
+**  @todo           Merge the use of the breakpoint and breakpoint-up mixins
+**  @since          1.0.0
+*/
+/*
+**  JS breakpoints
+**
+**  @description    Setting the current breakpoint to use as variable in JS
+**  @since          1.0.0
+*/
+body:before {
+  display: none;
+}
+@media only screen and (min-width: 1265px) {
+  body:before {
+    content: 'desktop';
+  }
+}
+@media only screen and (max-width: 1282px) {
+  body:before {
+    content: 'tablet-landscape';
+  }
+}
+@media only screen and (max-width: 1023px) {
+  body:before {
+    content: 'tablet-portrait';
+  }
+}
+@media only screen and (max-width: 767px) {
+  body:before {
+    content: 'smartphone-landscape';
+  }
+}
+@media only screen and (max-width: 558px) {
+  body:before {
+    content: 'smartphone-portrait';
+  }
+}
+
+.theme-color-1 {
+  background: #003299;
+}
+
+.theme-color-1-span::before {
+  content: "#003299";
+}
+
+.theme-color-2 {
+  background: #4076BF;
+}
+
+.theme-color-2-span::before {
+  content: "#328dd2";
+}
+
+.theme-color-3 {
+  background: #4076BF;
+}
+
+.theme-color-3-span::before {
+  content: "#4076BF";
+}
+
+.signature-color-ssm {
+  background: #187e80;
+}
+
+.signature-color-ssm-span::before {
+  content: "#187e80";
+}
+
+.ecb-quiz .ecb-quiz-questions,
+.ecb-quiz .ecb-quiz-controls,
+.ecb-quiz .ecb-quiz-nextButton {
+  display: none;
+}
+.ecb-quiz .ecb-quiz-checkAnswerButton {
+  display: block;
+}
+.ecb-quiz .ecb-quiz-questions .ecb-quiz-question {
+  display: none;
+}
+.ecb-quiz .ecb-quiz-questions .ecb-quiz-question.active {
+  display: block;
+}
+.ecb-quiz .ecb-quiz-questions .ecb-quiz-question .ecb-question-title {
+  margin-bottom: 50px;
+}
+.ecb-quiz .ecb-quiz-questions .ecb-quiz-question .ecb-question-explanation,
+.ecb-quiz .ecb-quiz-questions .ecb-quiz-question .ecb-question-result-box {
+  margin-top: 20px;
+}
+.ecb-quiz .ecb-quiz-questions .ecb-quiz-question .ecb-question-result-box {
+  padding: 20px 50px;
+  margin-left: -50px;
+  margin-right: -50px;
+}
+@media only screen and (max-width: 1023px) {
+  .ecb-quiz .ecb-quiz-questions .ecb-quiz-question .ecb-question-result-box {
+    padding: 20px 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+.ecb-quiz .ecb-quiz-questions .ecb-quiz-question .ecb-question-result-box {
+  opacity: 0;
+}
+@media only screen and (max-width: 767px) {
+  .ecb-quiz .ecb-quiz-questions .ecb-quiz-question .ecb-question-result-box {
+    display: none;
+  }
+}
+.ecb-quiz .ecb-quiz-questions .ecb-quiz-question .ecb-question-result-message .correct-answer,
+.ecb-quiz .ecb-quiz-questions .ecb-quiz-question .ecb-question-result-message .wrong-answer {
+  display: none;
+}
+.ecb-quiz .ecb-quiz-questions .ecb-quiz-question .ecb-question-possible-answer {
+  margin-bottom: 10px;
+}
+.ecb-quiz.ecb-quiz-start .ecb-quiz-questions,
+.ecb-quiz.ecb-quiz-start .ecb-quiz-controls {
+  display: block;
+}
+.ecb-quiz.ecb-quiz-check .ecb-quiz-checkAnswerButton {
+  display: none;
+}
+.ecb-quiz.ecb-quiz-check .ecb-quiz-nextButton {
+  display: block;
+}
+.ecb-quiz.ecb-quiz-check .ecb-quiz-questions .ecb-quiz-question.active .ecb-question-result-box {
+  opacity: 1;
+}
+@media only screen and (max-width: 767px) {
+  .ecb-quiz.ecb-quiz-check .ecb-quiz-questions .ecb-quiz-question.active .ecb-question-result-box {
+    display: block;
+  }
+}
+.ecb-quiz.ecb-quiz-check .ecb-quiz-questions .ecb-quiz-question.active.answered-correct .ecb-question-result-message .correct-answer,
+.ecb-quiz.ecb-quiz-check .ecb-quiz-questions .ecb-quiz-question.active.answered-wrong .ecb-question-result-message .wrong-answer {
+  display: inline;
+}
+.ecb-quiz.ecb-quiz-check .ecb-quiz-questions .ecb-quiz-question.active.answered-correct .ecb-question-result-box {
+  background-color: #ebf9ff;
+}
+.ecb-quiz.ecb-quiz-check .ecb-quiz-questions .ecb-quiz-question.active.answered-wrong .ecb-question-result-box {
+  background-color: #fef3f3;
+}
+.ecb-quiz.ecb-quiz-check p {
+  color: #000000;
+}
+.ecb-quiz.ecb-quiz-check .ecb-quiz-questions .ecb-quiz-question.active.answered-wrong .ecb-question-explanation p {
+  color: #cd1e1e;
+}
+.ecb-quiz.ecb-quiz-check .ecb-quiz-questions .ecb-quiz-question.active.answered-correct .ecb-question-explanation p {
+  color: #58b158;
+}
+.ecb-quiz.ecb-quiz-check .ecb-question-possible-answers input:checked + label {
+  color: #cd1e1e;
+}
+.ecb-quiz.ecb-quiz-check .ecb-question-possible-answers input:checked {
+  position: relative;
+}
+.ecb-quiz.ecb-quiz-check .ecb-question-possible-answers input:checked::before {
+  display: none;
+}
+.ecb-quiz.ecb-quiz-check .ecb-question-possible-answers input:checked::after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  border: none;
+  background-image: url("/shared/nav/svg/answer_wrong.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-color: #fff;
+  border-radius: 0;
+  width: 20px;
+  height: 20px;
+}
+.ecb-quiz.ecb-quiz-check .ecb-question-possible-answers input:checked[data-correct]:after {
+  background-image: url("/shared/nav/svg/answer_correct.svg");
+}
+.ecb-quiz.ecb-quiz-check .ecb-question-possible-answers input:checked[data-correct] + label,
+.ecb-quiz.ecb-quiz-check .ecb-question-possible-answers input[data-correct] + label {
+  color: #58b158;
+}
+.ecb-quiz .ecb-quiz-results .ecb-quiz-result {
+  display: none;
+}
+.ecb-quiz:not(.ecb-quiz-start) .ecb-quiz-results .ecb-quiz-result:target {
+  display: block;
+}
+.ecb-quiz h1 {
+  color: #003299;
+  text-align: center;
+  padding-bottom: 0em;
+}
+.ecb-quiz h1:after {
+  color: #003299;
+  text-align: center;
+  padding-bottom: 0em;
+  border-bottom: none;
+}
+.ecb-quiz .ecb-result-second-title {
+  text-align: center;
+  padding-bottom: 0.5em;
+  background: linear-gradient(to right, transparent 0%, transparent 35%, rgba(95, 90, 90, 0.178) 50%, transparent 65%) left bottom transparent no-repeat;
+  background-size: 100% 2px;
+}
+.ecb-quiz .quiz_badge {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+.ecb-quiz .quiz_badge img {
+  margin-top: 0;
+}
+.ecb-quiz .quiz_badge_wrong_answer {
+  filter: grayscale(1);
+  opacity: 0.2;
+}
+.ecb-quiz .quiz-replay {
+  position: relative;
+  white-space: nowrap;
+}
+.ecb-quiz .quiz-replay:before {
+  content: '';
+  display: inline-block;
+  height: 1.2em;
+  margin-bottom: -0.2em;
+  background-image: url(/shared/nav/svg/replay.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  padding: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+@media screen and (min-width: 558px) and (max-width: 767px) {
+  .ecb-quiz .ecb-quiz-results .targetHandler-link {
+    font-size: 0.8em;
+  }
+  .ecb-quiz .ecb-quiz-results .targetHandler-link:before {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 558px) {
+  .ecb-quiz .smartphone-noflex {
+    display: block;
+  }
+}
+
+#quiz-intro .ecb-box img {
+  margin-top: 0px;
+}
+
+.arrow-top.arrow-white:after {
+  border-top-color: #1FC4F4 !important;
+}
+
+/*.ecb-quiz-wrapper > .ecb-boxExtraLargePadding {
+    padding-top: $huge-space - 10px;
+    @include breakpoint(tablet-portrait){
+        padding-top: $small-margin - 10px; 
+    }
+} */
+/* #1FC4F4 */
+
+/*# sourceMappingURL=quizes.css.map */

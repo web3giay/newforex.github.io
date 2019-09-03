@@ -1,0 +1,96 @@
+.eqn-equationWrapper {
+  position: relative;
+}
+.eqn-equationWrapper:before, .eqn-equationWrapper:after {
+  position: absolute;
+  top: calc(50% - 8px);
+  z-index: 2;
+  width: 20px;
+  height: 100%;
+  color: #328dd2;
+  font: bold normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  pointer-events: none;
+  transition: opacity 500ms;
+  opacity: 0;
+}
+.eqn-equationWrapper:before {
+  left: 0;
+  content: "\f104";
+  text-align: left;
+}
+.eqn-equationWrapper:after {
+  right: 0;
+  content: "\f105";
+  text-align: right;
+}
+.eqn-equationWrapper .eqn-equationContainer {
+  position: relative;
+}
+.eqn-equationWrapper .eqn-equationContainer:before, .eqn-equationWrapper .eqn-equationContainer:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 500ms;
+  opacity: 0;
+}
+.eqn-equationWrapper .eqn-equationContainer:before {
+  left: 0;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), white 90px);
+}
+.eqn-equationWrapper .eqn-equationContainer:after {
+  right: 0;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white 90px);
+}
+.eqn-equationWrapper .eqn-equationContainer .eqn-equationParent {
+  position: relative;
+  padding: 8px 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.eqn-equationWrapper.eqn-showLeft .eqn-equationParent, .eqn-equationWrapper.eqn-showRight .eqn-equationParent {
+  cursor: e-resize;
+  /* fallback if grab cursor is unsupported */
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+}
+.eqn-equationWrapper.eqn-showLeft .eqn-equationParent.active, .eqn-equationWrapper.eqn-showRight .eqn-equationParent.active {
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: grabbing;
+}
+.eqn-equationWrapper.eqn-showLeft:before, .eqn-equationWrapper.eqn-showRight:after, .eqn-equationWrapper.eqn-showLeft .eqn-equationContainer:before, .eqn-equationWrapper.eqn-showRight .eqn-equationContainer:after {
+  opacity: 1;
+}
+
+.MathJax_CHTML {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.highlight .eqn-equationWrapper .eqn-equationContainer:before {
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #e5edf3 90px);
+}
+
+.highlight .eqn-equationWrapper .eqn-equationContainer:after {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #e5edf3 90px);
+}
+
+/*# sourceMappingURL=equations.css.map */
