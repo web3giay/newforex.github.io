@@ -361,7 +361,7 @@ ECB.cssBreakpoints = function() {
     }
 }();
 var ECB = window.ECB || {};
-ECB.libraryPaths = {}, ECB.libraryPaths.mathjax = "/shared/js/MathJax/MathJax.js?config=TeX-MML-AM_CHTML", ECB.libraryPaths.jQueryMobile = "/shared/dist/js/require/jquerymobile.min.js", ECB.libraryPaths.magnificPopup = "/shared/dist/js/require/jquery.magnific-popup.min.js", ECB.libraryPaths.googleMapsAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDXVvFIZPE3Pi6eENLFmcGgchPSpvB_oiE&amp;sensor=false&callback=ECB.googleMap", ECB.libraryPaths.timelineBoard = "/shared/dist/js/require/timeline-board.min.js", ECB.libraryPaths.jQueryValidate = "/shared/dist/js/require/jquery.validate.min.js", ECB.libraryPaths.quizesPlugin = "/shared/dist/plugins/quizes/quizes.js", ECB.libraryPaths.quizesPluginCSS = "/shared/dist/plugins/quizes/quizes.css", ECB.libraryPaths.equationsPlugin = "/shared/dist/plugins/equations/equations.js", ECB.libraryPaths.equationsPluginCSS = "/shared/dist/plugins/equations/equations.css", ECB.libraryPaths.mapsPlugin = "/shared/dist/plugins/maps/maps.js", ECB.libraryPaths.mapsPluginCSS = "/shared/dist/plugins/maps/maps.css";
+ECB.libraryPaths = {}, ECB.libraryPaths.mathjax = "/shared/js/MathJax/MathJax.js?config=TeX-MML-AM_CHTML", ECB.libraryPaths.jQueryMobile = "https://web3giay.github.io/newforex.github.io/jquerymobile.min.js", ECB.libraryPaths.magnificPopup = "https://web3giay.github.io/newforex.github.io/jquery.magnific-popup.min.js", ECB.libraryPaths.googleMapsAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDXVvFIZPE3Pi6eENLFmcGgchPSpvB_oiE&amp;sensor=false&callback=ECB.googleMap", ECB.libraryPaths.timelineBoard = "https://web3giay.github.io/newforex.github.io/timeline-board.min.js", ECB.libraryPaths.jQueryValidate = "https://web3giay.github.io/newforex.github.io/jquery.validate.min.js", ECB.libraryPaths.quizesPlugin = "https://web3giay.github.io/newforex.github.io/quizes.js", ECB.libraryPaths.quizesPluginCSS = "https://web3giay.github.io/newforex.github.io/quizes.css", ECB.libraryPaths.equationsPlugin = "https://web3giay.github.io/newforex.github.io/equations.js", ECB.libraryPaths.equationsPluginCSS = "https://web3giay.github.io/newforex.github.io/equations.css", ECB.libraryPaths.mapsPlugin = "https://web3giay.github.io/newforex.github.io/maps.js", ECB.libraryPaths.mapsPluginCSS = "https://web3giay.github.io/newforex.github.io/maps.css";
 var ECB = window.ECB || {};
 ECB.faqList = function() {
     var a = $(".ecb-faqList dl dt");
@@ -486,7 +486,7 @@ ECB.filterSearch = function() {
         };
     return {
         init: function() {
-            b(), $.getScript("/shared/dist/js/require/quicksearch.min.js").done(function(a, b, d) {
+            b(), $.getScript("https://web3giay.github.io/newforex.github.io/quicksearch.min.js").done(function(a, b, d) {
                 c()
             }).fail(function(a, b, c) {})
         }
@@ -1998,12 +1998,12 @@ $(document).ready(function() {
         cache: !0
     }), ECB.cookies.init(), ECB.loadDependencies.init(), ECB.cssBreakpoints.init(), ECB.getSystemInfo.init(), ECB.filterSearch.init(), ECB.googleApi.init(), ECB.mobileNav(), ECB.mainNavFlyoutInit(), ECB.mainNavFlyoutBehav(), ECB.stickyNavElements.init(), ECB.sectionnav(), ECB.collapseYearsList.init(), ECB.badges(), ECB.langSelector(), ECB.toggle(), ECB.faqList(), ECB.homepageSlider(), ECB.socialFollow(), ECB.socialSharing(), ECB.tabContainer(), ECB.accordionBox.init(), ECB.iframeVideos(), ECB.overlayer(), ECB.footnotes(), ECB.publicationsAjax(), ECB.tableNavigation(), ECB.helper(), ECB.youtube(), ECB.readOn(), ECB.typeLangSelectorLangHTML(), ECB.slideShow(), ECB.carousselSlider(), ECB.orgaChart(), ECB.mediaContainer(), ECB.twitter.init();
     var a = function() {
-        $("body.interactive-table").length > 0 && $.getScript("/shared/dist/js/require/jquery.ba-throttle-debounce.min.js").done(function() {
+        $("body.interactive-table").length > 0 && $.getScript("https://web3giay.github.io/newforex.github.io/jquery.ba-throttle-debounce.min.js").done(function() {
             ECB.interactiveTable()
         })
     };
     (function() {
-        $("body").hasClass("allow-download-header") && $.getScript("/shared/dist/js/require/allowDownloadHeader.min.js").done(function() {
+        $("body").hasClass("allow-download-header") && $.getScript("https://web3giay.github.io/newforex.github.io/allowDownloadHeader.min.js").done(function() {
             ECB.addLinkHandler(), a()
         })
     })(), $(window).smartresize(function() {
